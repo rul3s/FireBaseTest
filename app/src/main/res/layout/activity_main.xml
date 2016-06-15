@@ -9,8 +9,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="es.rul3s.firebasetest.MainActivity">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Subscribe"
+        android:id="@+id/main_btSubscribe"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/main_btUnsubscribe"
+        android:layout_alignStart="@+id/main_btUnsubscribe"
+        android:onClick="subscribe" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UNSUBSCRIBE"
+        android:id="@+id/main_btUnsubscribe"
+        android:layout_below="@+id/main_btSubscribe"
+        android:layout_centerHorizontal="true"
+        android:onClick="unsubscribe" />
 </RelativeLayout>
